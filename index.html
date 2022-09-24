@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/globalStyles.css" />
+  <link rel="stylesheet" href="./styles/desktop.css">
+  <link rel="stylesheet" href="./styles/mobile.css">
+  <link rel="stylesheet" href="./styles/img.css">
+  <link rel="stylesheet" href="./styles/buttons.css">
+  <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="stylesheet" href="./styles/inputs.css">
+  <link rel="stylesheet" href="./pages/home/style.css" />
+  <title>TechPosters - Home</title>
+</head>
+
+<body>
+  <section class="navbar container">
+    <header class="container">
+      <nav class="navbar-items">
+        <img src="./assets/img/logo.svg" alt="Logo da página que diz: TechPosters">
+        <button class="navbar-links navbar-link">Sair</button>
+      </nav>
+    </header>
+  </section>
+
+  <main class="main-container">
+
+    <section class="profile-section container">
+      <img src="./assets/img/user1.svg" alt="Foto de perfil de um homem segurando um gato">
+      <div class="profile-info">
+        <h3 class="user_name">Samuel Leão</h3>
+        <p class="user-ocupation">Front end Engineer</p>
+      </div>
+    </section>
+
+    <section class="post-section container">
+      <textarea class="text-title" name="titulo" id="post-title" cols="30" rows="10"
+        placeholder="Digitar título do post"></textarea>
+      <textarea class="text-description" name="descricao" id="post-description" cols="30" rows="10"
+        placeholder="Digitar descrição do post"></textarea>
+      <button class="post-button">Postar</button>
+    </section>
+
+    <h1 class="h1-posts container">Posts</h1>
+    <section class="posts-section">
+    </section>
+
+  </main>
+  
+  <div class="sugestions-container">
+    <h3 class="h3-sugestions container">Sugestões para você seguir</h3>
+  </div>
+
+</body>
+<script src="./script/database/users.js"></script>
+<script src="./script/database/posts.js"></script>
+<script src="./script/database/sugestUsers.js"></script>
+<script src="./pages/home/index.js"></script>
+
+</html>

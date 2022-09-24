@@ -1,6 +1,9 @@
 .navbar{
     background-color: var(--color-grey-1);
     padding: 1.75rem 0;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .navbar-items{
@@ -23,6 +26,7 @@
     font-size: 0.875rem;
     font-weight: 400;
     cursor: pointer;
+    border: transparent;
 }
 
 .navbar-link:hover, .navbar-link.actived{

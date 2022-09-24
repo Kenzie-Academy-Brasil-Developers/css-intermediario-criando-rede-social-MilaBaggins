@@ -6,24 +6,31 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --color-grey-1: #212529;
     --color-grey-2: #495057;
+    --color-grey-3: #DEE2E6;
     --color-white-fixed: #ffffff;
     --radius-1: 0.25rem;
     --font-family-1: "Inter", sans-serif;
+    --font-size-title: 24px;
+    --font-size-1: 1.2rem;
+    --font-size-2: 0.8rem;
 }
 
-body{
+body {
+    display: flex;
     font-family: var(--font-family-1);
+    margin-top: 110px;
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-ul{
+ul {
     list-style: none;
 }
+
