@@ -71,7 +71,7 @@ textarea{
 
 .sugestions_friends{
     display: flex;
-    overflow: scroll hidden;
+    overflow: hidden;
 }
 
 .div-sugestion-friends{
@@ -96,6 +96,7 @@ ul{
 
 .posts-section{
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .p-posts{
@@ -108,4 +109,22 @@ ul{
     margin-top: 20px;
     display: flex;
     gap: 25px;
+}
+
+@media(max-width: 768px){
+    .sugestions-container{
+        min-width: 100px;
+        position: absolute;
+        left: 0px;
+        top: 450px;
+    }
+    .sugestions_friends{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #h1-posts-media{
+        margin-top: 570px;
+        font-size: var(--font-size-title);
+    }
 }

@@ -3,29 +3,34 @@
         margin-left: 80px;
         max-width: 60%;
     }
-    
 
+    .h3-sugestions{
+        margin-left: 20px;
+        text-align: left;
+    }
     .sugestions-container{
+        text-align: left;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        max-width: 400px;
+        max-width: 1000px;
         max-height: 400px;
-        position: sticky;
-        top:100px;
-        left: 940px;
     }
 
     .sugestion-friends{
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
+        position: sticky;
+        top:90px;
+        left: 940px;
     }
 
     .div-sugestion-friends{
         max-height: 200px;
-        width: 300px;
+        max-width: 350px;
+        min-width: 350px;
         display: flex;
         flex-direction: row;
         margin-top: 30px;
@@ -35,5 +40,7 @@
     .sugestion-desktop-flex{
         display: flex;
         align-items: center;
+        min-width: 100px;
     }
+
 }

@@ -13,19 +13,24 @@
   <link rel="stylesheet" href="./styles/navbar.css">
   <link rel="stylesheet" href="./styles/inputs.css">
   <link rel="stylesheet" href="./pages/home/style.css" />
+  <link rel="stylesheet" href="./styles/modal.css">
   <title>TechPosters - Home</title>
 </head>
 
 <body>
+
   <section class="navbar container">
     <header class="container">
       <nav class="navbar-items">
         <img src="./assets/img/logo.svg" alt="Logo da página que diz: TechPosters">
-        <button class="navbar-links navbar-link">Sair</button>
+        <button type="submit" class="navbar-links navbar-link">Sair</button>
       </nav>
     </header>
   </section>
 
+  <div class="modal-dom" id="modal-id">
+  </div>
+  
   <main class="main-container">
 
     <section class="profile-section container">
@@ -41,23 +46,32 @@
         placeholder="Digitar título do post"></textarea>
       <textarea class="text-description" name="descricao" id="post-description" cols="30" rows="10"
         placeholder="Digitar descrição do post"></textarea>
-      <button class="post-button">Postar</button>
+      <button type="submit" id="clickPost" class="post-button">Postar</button>
     </section>
 
-    <h1 class="h1-posts container">Posts</h1>
+
+    <h1 id="h1-posts-media" class="h1-posts container">Posts</h1>
+
+    <div class="new-post"> 
+    </div>
+
     <section class="posts-section">
     </section>
 
   </main>
-  
+
   <div class="sugestions-container">
     <h3 class="h3-sugestions container">Sugestões para você seguir</h3>
   </div>
+
+
+
 
 </body>
 <script src="./script/database/users.js"></script>
 <script src="./script/database/posts.js"></script>
 <script src="./script/database/sugestUsers.js"></script>
+<script src="./script/modal.js"></script>
 <script src="./pages/home/index.js"></script>
 
 </html>

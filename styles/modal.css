@@ -1,0 +1,43 @@
+.backgrorund-opacity {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    opacity: 70%;
+    top: 0px;
+}
+
+.close-modal {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+@media(min-width: 769px) {
+
+    .modal {
+        padding: 20px;
+        position: fixed;
+        left: 300px;
+        flex-wrap: wrap;
+        overflow: hidden;
+        background-color: var(--color-white-fixed);
+        width: 670px;
+        height: 480px;
+        border-radius: 8px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .modal {
+        position: fixed;
+        flex-wrap: wrap;
+        background-color: var(--color-white-fixed);
+        min-width: 325px;
+        height: 660px;
+        overflow-y: scroll;
+        left: 4.5%;
+        top: 50px;
+        border-radius: 8px;
+    }
+}
